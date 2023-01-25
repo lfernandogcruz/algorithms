@@ -20,4 +20,7 @@ def is_anagram(first_string, second_string):
 
     status = sorted_1st == sorted_2nd
 
+    if first_string == "" or second_string == "":
+        status = False
+
     return (sorted_1st, sorted_2nd, status)
