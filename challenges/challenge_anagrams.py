@@ -11,14 +11,8 @@ def sort_it(string):
 
 def is_anagram(first_string, second_string):
     status = False
-    if not first_string or len(first_string) < 1:
-        return ["", second_string, status]
 
     lowered_1st = first_string.lower()
-
-    if not second_string or len(second_string) < 1:
-        return [lowered_1st, "", status]
-
     lowered_2nd = second_string.lower()
 
     sorted_1st = sort_it(lowered_1st)
